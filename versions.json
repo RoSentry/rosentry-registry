@@ -1,0 +1,125 @@
+{
+    "generatedAt":  "2026-05-31T05:49:04Z",
+    "schema":  1,
+    "services":  {
+                     "api":  {
+                                 "sha":  "af855d1",
+                                 "branch":  "main",
+                                 "builtAt":  "2026-05-31T05:40:46Z",
+                                 "repo":  "rosentry-api",
+                                 "image":  "ghcr.io/rosentry/rosentry-api"
+                             },
+                     "auth":  {
+                                  "sha":  "709eda5",
+                                  "branch":  "main",
+                                  "builtAt":  "2026-05-31T00:20:10Z",
+                                  "repo":  "rosentry-auth",
+                                  "image":  "ghcr.io/rosentry/rosentry-auth"
+                              },
+                     "bot":  {
+                                 "sha":  "bd5c9d0",
+                                 "branch":  "main",
+                                 "builtAt":  "2026-05-31T05:42:45Z",
+                                 "repo":  "rosentry-bot",
+                                 "image":  "ghcr.io/rosentry/rosentry-bot"
+                             },
+                     "client":  {
+                                    "sha":  null,
+                                    "branch":  "main",
+                                    "builtAt":  null,
+                                    "repo":  "rosentry-client",
+                                    "image":  "ghcr.io/rosentry/rosentry-client"
+                                },
+                     "dashboard":  {
+                                       "sha":  "7a4706c",
+                                       "branch":  "main",
+                                       "builtAt":  "2026-05-31T05:39:19Z",
+                                       "repo":  "rosentry-dashboard",
+                                       "image":  "ghcr.io/rosentry/rosentry-app"
+                                   },
+                     "db":  {
+                                "sha":  "fe7069d",
+                                "branch":  "main",
+                                "builtAt":  "2026-05-30T02:11:39Z",
+                                "repo":  "rosentry-db",
+                                "image":  "ghcr.io/rosentry/rosentry-db"
+                            },
+                     "docs":  {
+                                  "sha":  "cf537c3",
+                                  "branch":  "main",
+                                  "builtAt":  "2026-05-30T04:12:18Z",
+                                  "repo":  "rosentry-docs",
+                                  "image":  "ghcr.io/rosentry/rosentry-docs"
+                              },
+                     "logos":  {
+                                   "sha":  "3094a95",
+                                   "branch":  "main",
+                                   "builtAt":  "2026-05-04T13:18:40Z",
+                                   "repo":  "rosentry-logos",
+                                   "image":  "ghcr.io/rosentry/rosentry-logos"
+                               },
+                     "proxy":  {
+                                   "sha":  "1c11f0d",
+                                   "branch":  "main",
+                                   "builtAt":  "2026-05-31T03:09:01Z",
+                                   "repo":  "rosentry-proxy",
+                                   "image":  "ghcr.io/rosentry/rosentry-proxy"
+                               },
+                     "schema":  {
+                                    "sha":  "2d234fc",
+                                    "branch":  "main",
+                                    "builtAt":  "2026-05-30T02:11:26Z",
+                                    "repo":  "rosentry-schema",
+                                    "image":  "ghcr.io/rosentry/rosentry-schema"
+                                },
+                     "sdk":  {
+                                 "sha":  "5713e1f",
+                                 "branch":  "main",
+                                 "builtAt":  "2026-05-31T01:00:13Z",
+                                 "repo":  "rosentry-sdk",
+                                 "image":  "ghcr.io/rosentry/rosentry-sdk"
+                             },
+                     "state":  {
+                                   "sha":  null,
+                                   "branch":  "main",
+                                   "builtAt":  null,
+                                   "repo":  "rosentry-state",
+                                   "image":  "ghcr.io/rosentry/rosentry-state"
+                               },
+                     "status":  {
+                                    "sha":  "6318088",
+                                    "branch":  "main",
+                                    "builtAt":  "2026-05-31T01:16:55Z",
+                                    "repo":  "rosentry-status",
+                                    "image":  "ghcr.io/rosentry/rosentry-status"
+                                },
+                     "support":  {
+                                     "sha":  "4d9b86a",
+                                     "branch":  "main",
+                                     "builtAt":  "2026-05-31T05:07:15Z",
+                                     "repo":  "rosentry-support",
+                                     "image":  "ghcr.io/rosentry/rosentry-support"
+                                 },
+                     "ui-tokens":  {
+                                       "sha":  "8cda80d",
+                                       "branch":  "main",
+                                       "builtAt":  "2026-05-30T02:10:50Z",
+                                       "repo":  "rosentry-ui-tokens",
+                                       "image":  "ghcr.io/rosentry/rosentry-ui-tokens"
+                                   },
+                     "vps":  {
+                                 "sha":  "40dbab3",
+                                 "branch":  "main",
+                                 "builtAt":  "2026-05-31T04:57:37Z",
+                                 "repo":  "rosentry-vps",
+                                 "image":  "ghcr.io/rosentry/rosentry-vps"
+                             },
+                     "web":  {
+                                 "sha":  "d85bdaf",
+                                 "branch":  "main",
+                                 "builtAt":  "2026-05-30T21:45:46Z",
+                                 "repo":  "rosentry-web",
+                                 "image":  "ghcr.io/rosentry/rosentry-web"
+                             }
+                 }
+}

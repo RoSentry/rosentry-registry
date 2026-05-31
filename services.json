@@ -1,0 +1,73 @@
+{
+    "services":  {
+                     "api":  {
+                                 "repo":  "rosentry-api",
+                                 "image":  "ghcr.io/rosentry/rosentry-api"
+                             },
+                     "auth":  {
+                                  "repo":  "rosentry-auth",
+                                  "image":  "ghcr.io/rosentry/rosentry-auth"
+                              },
+                     "bot":  {
+                                 "repo":  "rosentry-bot",
+                                 "image":  "ghcr.io/rosentry/rosentry-bot"
+                             },
+                     "client":  {
+                                    "repo":  "rosentry-client",
+                                    "image":  "ghcr.io/rosentry/rosentry-client"
+                                },
+                     "dashboard":  {
+                                       "repo":  "rosentry-dashboard",
+                                       "image":  "ghcr.io/rosentry/rosentry-app"
+                                   },
+                     "db":  {
+                                "repo":  "rosentry-db",
+                                "image":  "ghcr.io/rosentry/rosentry-db"
+                            },
+                     "docs":  {
+                                  "repo":  "rosentry-docs",
+                                  "image":  "ghcr.io/rosentry/rosentry-docs"
+                              },
+                     "logos":  {
+                                   "repo":  "rosentry-logos",
+                                   "image":  "ghcr.io/rosentry/rosentry-logos"
+                               },
+                     "proxy":  {
+                                   "repo":  "rosentry-proxy",
+                                   "image":  "ghcr.io/rosentry/rosentry-proxy"
+                               },
+                     "schema":  {
+                                    "repo":  "rosentry-schema",
+                                    "image":  "ghcr.io/rosentry/rosentry-schema"
+                                },
+                     "sdk":  {
+                                 "repo":  "rosentry-sdk",
+                                 "image":  "ghcr.io/rosentry/rosentry-sdk"
+                             },
+                     "state":  {
+                                   "repo":  "rosentry-state",
+                                   "image":  "ghcr.io/rosentry/rosentry-state"
+                               },
+                     "status":  {
+                                    "repo":  "rosentry-status",
+                                    "image":  "ghcr.io/rosentry/rosentry-status"
+                                },
+                     "support":  {
+                                     "repo":  "rosentry-support",
+                                     "image":  "ghcr.io/rosentry/rosentry-support"
+                                 },
+                     "ui-tokens":  {
+                                       "repo":  "rosentry-ui-tokens",
+                                       "image":  "ghcr.io/rosentry/rosentry-ui-tokens"
+                                   },
+                     "vps":  {
+                                 "repo":  "rosentry-vps",
+                                 "image":  "ghcr.io/rosentry/rosentry-vps"
+                             },
+                     "web":  {
+                                 "repo":  "rosentry-web",
+                                 "image":  "ghcr.io/rosentry/rosentry-web"
+                             }
+                 },
+    "schema":  1
+}
