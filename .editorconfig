@@ -1,0 +1,32 @@
+# Baseline whitespace rules, identical across every RoSentry repo so a file does
+# not change shape depending on which editor last opened it.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Markdown: two trailing spaces is a hard line break, so trimming them silently
+# reflows the rendered document.
+[*.md]
+trim_trailing_whitespace = false
+
+# Tab-sensitive formats — a space here is a syntax error, not a style choice.
+[Makefile]
+indent_style = tab
+
+[*.{go,mk}]
+indent_style = tab
+
+[*.lua]
+indent_size = 4
+
+[*.cs]
+indent_size = 4
+
+[*.{yml,yaml,json,jsonl}]
+indent_size = 2

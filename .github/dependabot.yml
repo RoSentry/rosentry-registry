@@ -1,0 +1,11 @@
+# Dependabot — automated Actions updates.
+#
+# github-actions only: this repo ships no package.json, so there is no npm
+# ecosystem for Dependabot to track. Adding an "npm" entry here would produce a
+# permanent "no dependency files found" error rather than nothing.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
