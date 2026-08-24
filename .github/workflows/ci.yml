@@ -1,0 +1,35 @@
+# Validate the data this repo exists to serve.
+#
+# There is no build and no test suite here — services.json, versions.json and
+# ledger/*.jsonl are read by other services as the source of truth for what
+# exists and at which version. A malformed file does not fail in this repo; it
+# fails in whatever parses it next, a long way from the commit that broke it.
+#
+# ubuntu-latest, never the self-hosted runner: a pull_request trigger on a
+# self-hosted runner would execute a fork's code on the production VPS.
+name: CI
+
+on:
+  pull_request:
+    branches: [main, staging]
+  push:
+    branches: [staging]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    name: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate data files
+        run: node scripts/validate.mjs
