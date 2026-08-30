@@ -1,7 +1,14 @@
 # rosentry-registry
 
-Data-only repo holding a build/version ledger for RoSentry services. No code, no
-CI, no tests — just JSON.
+Data-only repo holding a build/version ledger for RoSentry services. No product
+code and no build — the shipped artifacts are JSON. There is one script and one
+workflow, both guarding the data: `scripts/validate.mjs` (JSON well-formedness,
+one complete value per ledger line, no duplicate keys) runs from
+`.github/workflows/ci.yml` on every PR and on pushes to `staging`.
+
+```
+node scripts/validate.mjs   # OK  19 data files valid (services.json, versions.json, 17 ledger files)
+```
 
 > **Status: seeded, not live.** Everything in here is a one-time snapshot taken
 > on 2026-05-31. Nothing writes to it and nothing reads from it today. See
@@ -35,7 +42,8 @@ rosentry-status in commit `0f389f8` ("new brand favicon + remove Deployment
 freshness section"). `rosentry-status/src/App.jsx` reads only `VITE_API_URL`;
 there is no manifest fetch and no "Up to date / Behind / Unknown" logic left in
 it. A stale `VITE_VERSIONS_MANIFEST_URL` line still sits in that repo's
-`.env.production` and README, but no code reads it.
+`.env.production`, but no code reads it. (That repo's README no longer claims
+otherwise — corrected in the same pass as this note.)
 
 **Coverage is 17 of the org's 20 services.** Missing: `db-gateway`, `replays`,
 `registry`. `services.json` and `versions.json` agree with each other on all 17
